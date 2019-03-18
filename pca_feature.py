@@ -8,3 +8,4 @@ from sklearn.model_selection import train_test_split
 
 
 if __name__ == '__main__':
+    abbrPath = 'E:\python_project\happinessPredict\DataSet\happiness_train_abbr.csv'

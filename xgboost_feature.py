@@ -12,7 +12,7 @@ if __name__ == '__main__':
     col = col1 + col2
     # print(col)
 
-    abbrPath = 'E:\python_project\workingspace\TianChi_Match\Happyness\DataSet\happiness_train_abbr.csv'
+    abbrPath = 'E:\python_project\happinessPredict\DataSet\happiness_train_abbr.csv'
     data = pd.read_csv(abbrPath, usecols=col)
     happiness = pd.read_csv(abbrPath, usecols=[1])
 
