@@ -60,7 +60,6 @@ if __name__ == '__main__':
     testData = readData.readData(abbrTest, False)
     testData = scaler.transform(testData)
 
-
     # 绘制主成分直方图
     ratio = pca.explained_variance_ratio_.tolist()
     plt.figure()
@@ -77,5 +76,6 @@ if __name__ == '__main__':
     # 绘制bar值
     for _x, _y in zip(range(len(ratio)), ratio):
         plt.text(_x, _y, '%.3f' % _y, ha='center', va='bottom', size=9)
+
     # plt.savefig("pca.svg", transparent=True, format='svg')
     plt.show()
